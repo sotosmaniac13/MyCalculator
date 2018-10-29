@@ -22,8 +22,11 @@ namespace MyCalculator
 
             // Ask the user to type the first number
             Console.WriteLine("Type a number, and then press Enter");
-            int num1 = Convert.ToInt16(Console.ReadLine());
+            //int num1 = Convert.ToInt16(Console.ReadLine());
             // Line 13: convert num1 to integer
+
+            //10. Convert to Float-------------------------------------------------
+            double num1 = Convert.ToDouble(Console.ReadLine());
 
             //7. Accept only positive numbers--------------------------------------
             /*while (num1 <= 0)
@@ -39,11 +42,27 @@ namespace MyCalculator
                 num1 = Convert.ToInt16(Console.ReadLine());
             }*/
 
+            //9. Accept only numbers between -100 and 100--------------------------
+            /*while ((num1 < -100) || (num1 > 100))
+            {
+                Console.WriteLine("Enter a number between (-100) - (100): ");
+                num1 = Convert.ToInt16(Console.ReadLine());
+            }*/
+
+            //10. Accept only floats between -100.0 and 100.0----------------------
+            while ((num1 < -100.0) || (num1 > 100.0))
+            {
+                Console.WriteLine("Enter a number between (-100.0) - (100.0): ");
+                num1 = Convert.ToDouble(Console.ReadLine());
+            }
 
             // Ask the user to type the second number
             Console.WriteLine("Type another number, and then press Enter");
-            int num2 = Convert.ToInt16(Console.ReadLine());
+            //int num2 = Convert.ToInt16(Console.ReadLine());
             // Line 18: convert num2 to integer
+
+            //10. Convert to Float-------------------------------------------------
+            double num2 = Convert.ToDouble(Console.ReadLine());
 
             //7. Accept only positive numbers--------------------------------------
             /*while (num2 <= 0)
@@ -58,6 +77,20 @@ namespace MyCalculator
                 Console.WriteLine("Enter a number between 1-100: ");
                 num2 = Convert.ToInt16(Console.ReadLine());
             }*/
+
+            //9. Accept only numbers between -100 and 100--------------------------
+            /*while ((num2 < -100) || (num2 > 100))
+            {
+                Console.WriteLine("Enter a number between (-100) - (100): ");
+                num2 = Convert.ToInt16(Console.ReadLine());
+            }*/
+
+            //10. Accept only floats between -100.0 and 100.0----------------------
+            while ((num2 < -100.0) || (num2 > 100.0))
+            {
+                Console.WriteLine("Enter a number between (-100.0) - (100.0): ");
+                num1 = Convert.ToDouble(Console.ReadLine());
+            }
 
             // Ask the user to choose an option
             Console.WriteLine("Choose an option from the following list:");

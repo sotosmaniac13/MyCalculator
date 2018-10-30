@@ -23,7 +23,7 @@ namespace MyCalculator
             //MyCalculator.Bonus1.Secondary1(); //---------------------------------
             //MyCalculator.Bonus3.Secondary3(); //---------------------------------
             //MyCalculator.Bonus4.Secondary4(); //---------------------------------
-
+           
 
             // Ask the user to type the first number
             Console.WriteLine("Type a number, and then press Enter");

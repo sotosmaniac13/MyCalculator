@@ -85,10 +85,10 @@ namespace MyCalculator
 
             // Ask the user to choose an option
             Console.WriteLine("Choose an option from the following list:");
-            Console.WriteLine("\tadd - Add");
+            Console.WriteLine("\tadd      - Add");
             Console.WriteLine("\tsubtract - Subtract");
             Console.WriteLine("\tmultiply - Multiply");
-            Console.WriteLine("\tdivide - Divide");
+            Console.WriteLine("\tdivide   - Divide");
             Console.Write("Your option? ");
 
             // Use a switch statement to do the math

@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,23 +11,14 @@ namespace MyCalculator
     {
         static void Main(string[] args)
         {
-            // place this code inside Program.cs, within the Main method
-
-            // Declare variables and then instantiate to zero
-            //int num1 = 0; int num2 = 0;
-
-            // Display title as the C# console calculator app
-            Console.WriteLine("Console Calculator in C#\r");
-            Console.WriteLine("------------------------\n");
-        
-
             // Ask the user to type the first number
             Console.WriteLine("Type a number, and then press Enter");
             //int num1 = Convert.ToInt16(Console.ReadLine());
             // Line 13: convert num1 to integer
 
             //10. Convert to Float-------------------------------------------------
-            double num1 = Convert.ToDouble(Console.ReadLine());
+            float num1 = float.Parse(Console.ReadLine());
+
 
             //7. Accept only positive numbers--------------------------------------
             /*while (num1 <= 0)
@@ -53,7 +45,7 @@ namespace MyCalculator
             while ((num1 < -100.0) || (num1 > 100.0))
             {
                 Console.WriteLine("Enter a number between (-100.0) - (100.0): ");
-                num1 = Convert.ToDouble(Console.ReadLine());
+                num1 = float.Parse(Console.ReadLine());
             }
 
             // Ask the user to type the second number
@@ -62,7 +54,7 @@ namespace MyCalculator
             // Line 18: convert num2 to integer
 
             //10. Convert to Float-------------------------------------------------
-            double num2 = Convert.ToDouble(Console.ReadLine());
+            float num2 = float.Parse(Console.ReadLine());
 
             //7. Accept only positive numbers--------------------------------------
             /*while (num2 <= 0)
@@ -89,7 +81,7 @@ namespace MyCalculator
             while ((num2 < -100.0) || (num2 > 100.0))
             {
                 Console.WriteLine("Enter a number between (-100.0) - (100.0): ");
-                num1 = Convert.ToDouble(Console.ReadLine());
+                num1 = float.Parse(Console.ReadLine());
             }
 
             // Ask the user to choose an option
@@ -117,7 +109,7 @@ namespace MyCalculator
                     while (num2 == 0)
                     {
                         Console.WriteLine("Enter a non-zero divisor: ");
-                        num2 = Convert.ToInt16(Console.ReadLine());
+                        num2 = float.Parse(Console.ReadLine());
                     }
                     Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
                     break;
@@ -126,6 +118,10 @@ namespace MyCalculator
                     Console.WriteLine("That is an incorrect option entry, please try again.");
                     break;
             }
+
+            //MyCalculator.Bonus1.Secondary1();
+
+
             // Wait for the user to respond before closing
             Console.Write("Press any key to close the Calculator console app...");
             
